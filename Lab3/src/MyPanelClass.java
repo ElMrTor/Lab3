@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 public class MyPanelClass extends JPanel {
 
 
-private static final long serialVersionUID = 7057541440811488699L;
+
 
 
 public void paintComponent(Graphics g) {
@@ -38,29 +38,14 @@ public void paintComponent(Graphics g) {
 
  
 
-                        //Paint the background
-
-                        g.setColor(Color.BLACK);
-
-                        g.fillRect(x1, y1, width+1, height+1);
-
                         
 
-                        //Draw a Border
+                        g.setColor(Color.LIGHT_GRAY);
 
-                        g.setColor(Color.YELLOW);
-
-                        g.drawRect(x1,  y1,  width,  height);
+                        g.fillOval((width/2) - 27 , (height/2) - 27 , 55, 55);
 
                         
-
-                        //Draw a second border
-
-                        g.setColor(Color.RED);
-
-                        g.drawRect(x1+5, y1+5, width-10, height-10);
-
-            }
 
 }
 
+}
