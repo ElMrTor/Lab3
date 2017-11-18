@@ -2,6 +2,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
 
+
 public class Lab3Exercises {
 	public static void main(String[] args) {
 		JFrame myFrame = new JFrame("Hector");
@@ -11,8 +12,8 @@ public class Lab3Exercises {
 		int width = (int) screensize.getWidth();
 		
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		myFrame.setLocation(width/2, height/2);
-		myFrame.setSize(200, 200);
+		myFrame.setLocation(width/2 - width/6, height/2 - height/6);
+		myFrame.setSize(400, 240);
 		myFrame.setVisible(true);
 	    MyPanelClass myPanel = new MyPanelClass();
         myFrame.getContentPane().add(myPanel);
